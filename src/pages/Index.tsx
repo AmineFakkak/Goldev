@@ -142,9 +142,11 @@ const Index = () => {
               Contactez-nous dès aujourd'hui pour discuter de vos besoins en formation, recrutement ou conseil RH.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link to="/contact">
               <button className="bg-white hover:bg-gray-100 text-goldev-primary font-medium py-3 px-8 rounded-md transition-all duration-300">
-                Nous contacter
+              Contactez-Nous
               </button>
+              </Link>
               <button className="bg-transparent hover:bg-white/10 text-white border border-white font-medium py-3 px-8 rounded-md transition-all duration-300">
                 En savoir plus
               </button>

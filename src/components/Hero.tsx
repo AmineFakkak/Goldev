@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import BlogPost from './BlogPost';
+import { Link } from "react-router-dom";
 
 interface BlogData {
   id: number;
@@ -74,9 +75,10 @@ const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <button className="btn-primary">Découvrir nos services</button>
+            <Link to="/contact">
             <button className="bg-white/10 hover:bg-white/20 text-white border border-goldev-primary font-medium py-2 px-6 rounded-md transition-all duration-300">
-              Nous contacter
-            </button>
+              Contactez-Nous
+            </button></Link>
           </div>
         </div>
 
