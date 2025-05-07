@@ -1,0 +1,177 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 0 0% 0%; /* Black */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 0 0% 20%; /* Dark Gray */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 95%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 0% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 85%;
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 0 0% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .service-card {
+    @apply bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .btn-primary {
+    @apply bg-goldev-primary hover:bg-goldev-secondary text-white font-medium py-2 px-6 rounded-md transition-all duration-300;
+  }
+
+  .card-hover-effect {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  .reveal-on-scroll {
+    @apply opacity-0 transition-all duration-1000;
+  }
+
+  .reveal-on-scroll.active {
+    @apply opacity-100;
+  }
+}
+
+/* Carousel Styles */
+.carousel-container {
+  @apply relative bg-white/5 backdrop-blur-sm;
+}
+
+.carousel {
+  @apply overflow-hidden relative h-full;
+}
+
+.carousel-inner {
+  @apply flex transition-transform duration-500 ease-in-out h-full;
+}
+
+.carousel-item {
+  @apply w-full flex-shrink-0 h-full;
+}
+
+.carousel-control {
+  @apply absolute top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-3 rounded-full cursor-pointer z-10 transition-all;
+}
+
+.carousel-control-prev {
+  @apply left-4;
+}
+
+.carousel-control-next {
+  @apply right-4;
+}
+
+.carousel-indicators {
+  @apply absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10;
+}
+
+.carousel-indicator {
+  @apply w-3 h-3 rounded-full bg-white/40 hover:bg-white/70 cursor-pointer transition-all;
+}
+
+.carousel-indicator.active {
+  @apply bg-white scale-125;
+}
