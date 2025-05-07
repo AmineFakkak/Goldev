@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../components/ui/carousel";
 import { Card, CardContent } from "../components/ui/card";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [currentBlogIndex, setCurrentBlogIndex] = useState(0);
@@ -109,10 +110,12 @@ const Index = () => {
                           <p className="text-gray-600 mb-4">
                             {item.description}
                           </p>
+                          <Link to="/blog">
                           <button className="text-goldev-primary font-medium hover:underline flex items-center">
                             Lire l'article
                             <ArrowRight className="h-5 w-5 ml-1" />
                           </button>
+                          </Link>
                         </div>
                       </div>
                     </Card>
@@ -124,8 +127,10 @@ const Index = () => {
             </Carousel>
             
             <div className="text-center mt-12">
-              <button className="btn-primary">Voir tous les articles</button>
-            </div>
+
+                            <Link to="/blog">
+  <button className="btn-primary">Voir tous les articles</button>
+</Link>            </div>
           </div>
         </section>
         
