@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { MapPin, Phone, Mail, Facebook, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Linkedin, Youtube, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,36 +10,52 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="text-3xl font-bold text-white mb-4">GOLDEV</div>
-            <p className="text-sm text-gray-300 mb-4">
+            <p className="text-base text-gray-300 mb-4">
               Votre partenaire expert en formation, recrutement et conseil RH pour développer votre entreprise et vos talents.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://web.facebook.com/goldevofficiel/?_rdc=1&_rdr" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/goldev/?viewAsMember=true" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+             <a 
+  href="https://web.facebook.com/goldevofficiel/?_rdc=1&_rdr" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-white transition-colors"
+>
+  <Facebook className="h-5 w-5" />
+</a>
+<a 
+  href="https://www.linkedin.com/company/goldev/?viewAsMember=true" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-white transition-colors"
+>
+  <Linkedin className="h-5 w-5" />
+</a>
+<a 
+  href="https://www.youtube.com/channel/UCzLbsZqEjMD---cF9dPmYIA" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-white transition-colors"
+>
+  <Youtube className="h-5 w-5" />
+</a>
+<a 
+  href="#" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-white transition-colors"
+>
+  <Instagram className="h-5 w-5" />
+</a>
+
             </div>
           </div>
           
           <div>
             <h4 className="text-lg font-bold mb-4">Nos Services</h4>
             <ul className="space-y-2">
-              <li><Link to="/formation" className="text-gray-300 hover:text-white transition-colors">Formation</Link></li>
-              <li><Link to="/recruitment" className="text-gray-300 hover:text-white transition-colors">Recrutement</Link></li>
-              <li><Link to="/consulting" className="text-gray-300 hover:text-white transition-colors">Consulting RH</Link></li>
-              <li><Link to="#" className="text-gray-300 hover:text-white transition-colors">Marketing RH</Link></li>
+              <li><Link to="/formation" className="text-base text-gray-300 hover:text-white transition-colors">Formation</Link></li>
+              <li><Link to="/recruitment" className="text-base text-gray-300 hover:text-white transition-colors">Recrutement</Link></li>
+              <li><Link to="/consulting" className="text-base text-gray-300 hover:text-white transition-colors">Consulting RH & marketing</Link></li>
             </ul>
           </div>
           
@@ -82,7 +98,7 @@ const Footer = () => {
                   href="mailto:goldev.formation@gmail.com" 
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  goldev.formation@gmail.com
+                  contact@goldev.ma
                 </a>
               </li>
             </ul>

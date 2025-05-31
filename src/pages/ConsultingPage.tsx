@@ -16,7 +16,7 @@ const ConsultingPage = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-bold text-black">
-                Conseil en <span className="text-gray-700">Gestion</span>
+                Consulting RH <span className="text-gray-700">& marketing</span>
               </h1>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Des solutions stratégiques pour le développement de votre entreprise

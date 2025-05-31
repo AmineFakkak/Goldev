@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Card, CardContent } from '../components/ui/card';
-import { Mail, Phone, MapPin, Send, Facebook, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Facebook,Instagram, Youtube ,Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
@@ -146,30 +146,48 @@ const ContactPage = () => {
                         <Mail className="h-6 w-6 mr-4 mt-1" />
                         <div>
                           <h3 className="text-lg font-semibold mb-1">Email</h3>
-                          <p className="text-gray-300">goldev.formation@gmail.com</p>
+                          <p className="text-gray-300">contact@goldev.ma</p>
                         </div>
                       </div>
                     </div>
                     <div className="mt-10">
                       <h3 className="text-lg font-semibold mb-4">Nos réseaux sociaux</h3>
-                      <div className="flex space-x-4">
-                        <a 
-                          href="https://web.facebook.com/goldevofficiel/?_rdc=1&_rdr" 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
-                        >
-                          <Facebook className="h-5 w-5" />
-                        </a>
-                        <a 
-                          href="https://www.linkedin.com/company/goldev/?viewAsMember=true" 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
-                        >
-                          <Linkedin className="h-5 w-5" />
-                        </a>
-                      </div>
+
+<div className="flex space-x-4">
+  <a 
+    href="https://web.facebook.com/goldevofficiel/?_rdc=1&_rdr" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
+  >
+    <Facebook className="h-5 w-5" />
+  </a>
+  <a 
+    href="https://www.linkedin.com/company/goldev/?viewAsMember=true" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
+  >
+    <Linkedin className="h-5 w-5" />
+  </a>
+  <a 
+    href="https://www.instagram.com/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
+  >
+    <Instagram className="h-5 w-5" />
+  </a>
+  <a 
+    href="https://www.youtube.com/channel/UCzLbsZqEjMD---cF9dPmYIA" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="bg-white text-black p-3 rounded-full hover:bg-gray-200 transition-colors"
+  >
+    <Youtube className="h-5 w-5" />
+  </a>
+</div>
+
                     </div>
                     <div className="mt-10">
                       <h3 className="text-lg font-semibold mb-4">Horaires d'ouverture</h3>
@@ -187,21 +205,23 @@ const ContactPage = () => {
         </section>
 
         {/* Map Section */}
-        <section className="pb-16 md:pb-24">
-          <div className="container mx-auto px-4">
-            <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26599.384467673344!2d-6.9241117!3d33.9246456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76c5bd9ca3819%3A0x76262aad77375d3!2sTamara%2C%20Morocco!5e0!3m2!1sen!2sus!4v1746605835428!5m2!1sen!2sus" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </section>
+      <section className="pb-16 md:pb-24">
+  <div className="container mx-auto px-4">
+   <div className="w-full h-96 bg-gray-200 rounded-lg overflow-hidden">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3325.060860509037!2d-6.909765!3d33.934098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda712966226b18f%3A0x0000000000000000!2sAvenida%20Moulay%20Ali%20Cherif%2C%20Temara%2C%20Maroc!5e0!3m2!1sfr!2sma!4v1716630000000!5m2!1sfr!2sma"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
+
+  </div>
+</section>
+
       </main>
       <Footer />
     </div>

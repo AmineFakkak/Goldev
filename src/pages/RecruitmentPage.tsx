@@ -16,7 +16,7 @@ const RecruitmentPage = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h1 className="mb-4 text-4xl md:text-5xl lg:text-6xl font-bold text-black">
-                Services de <span className="text-gray-700">Recrutement</span>
+                Services de <span className="text-gray-700">recrutement</span>
               </h1>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
                 Nous connectons les meilleurs talents avec les entreprises visionnaires
@@ -34,7 +34,7 @@ const RecruitmentPage = () => {
                         className="h-full w-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold mt-4 text-black">Notre Position sur le Marché</h3>
+                    <h3 className="text-xl font-bold mt-4 text-black">Notre position sur le marché</h3>
                     <p className="mt-4 mb-6 text-gray-600">
                       GOLDEV se positionne comme l'un des meilleurs de l'assistance au recrutement des entreprises ! 
                     </p>
@@ -55,7 +55,7 @@ const RecruitmentPage = () => {
                         className="h-full w-full object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-bold mt-4 text-black">Pour les Candidats</h3>
+                    <h3 className="text-xl font-bold mt-4 text-black">Pour les candidats</h3>
                     <p className="mt-4 mb-6 text-gray-600">
                       Vous êtes candidat à la recherche d'un emploi?
                     </p>
@@ -72,7 +72,7 @@ const RecruitmentPage = () => {
               <div className="w-full h-64 md:h-96 bg-[url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40')] bg-cover bg-center rounded-lg relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
                   <div className="p-8 max-w-2xl text-center text-white">
-                    <h3 className="text-2xl font-bold mb-4">Une Approche Personnalisée</h3>
+                    <h3 className="text-2xl font-bold mb-4">Une approche personnalisée</h3>
                     <p>Notre processus de recrutement est conçu pour trouver les candidats qui correspondent non seulement aux compétences requises, mais aussi à la culture de votre entreprise.</p>
                   </div>
                 </div>

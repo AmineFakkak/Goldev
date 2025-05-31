@@ -28,7 +28,7 @@ const services: Service[] = [
   },
   {
     id: 3,
-    title: "Consulting & RH Marketing",
+    title: "Consulting RH & marketing",
     description: "Un accompagnement stratégique pour optimiser vos processus RH et valoriser votre marque employeur sur le marché.",
     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     path: "/consulting"
@@ -81,7 +81,7 @@ const ServiceSection = () => {
         className="container mx-auto px-4 reveal-on-scroll"
       >
         <div className="text-center mb-12">
-          <h2 className="mb-4 text-white">Nos Services</h2>
+          <h2 className="mb-4 text-white">Nos services</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Découvrez comment GOLDEV peut vous aider à atteindre vos objectifs professionnels avec nos services spécialisés et personnalisés.
           </p>

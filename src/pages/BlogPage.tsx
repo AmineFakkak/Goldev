@@ -102,7 +102,7 @@ const BlogPage = () => {
         {/* Hero Section */}
         <section className="bg-black text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Notre Blog</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Notre blog</h1>
             <p className="text-xl max-w-3xl mx-auto mb-10">
               Découvrez nos derniers articles sur la formation, le recrutement et le développement professionnel
             </p>

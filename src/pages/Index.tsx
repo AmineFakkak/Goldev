@@ -139,7 +139,7 @@ const Index = () => {
           <div className="container mx-auto px-4 text-center">
             <h2 className="mb-6 text-white">Prêt à développer votre entreprise ?</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Contactez-nous dès aujourd'hui pour discuter de vos besoins en formation, recrutement ou conseil RH.
+              Contactez-nous dès aujourd'hui pour discuter de vos besoins en formation, recrutement ou Consulting RH & marketing.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/contact">

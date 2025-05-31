@@ -71,27 +71,7 @@ const FormationPage = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-white shadow-lg border-0 text-black h-full">
-                <CardContent className="p-6 md:p-8">
-                  <div className="mb-4 h-48 rounded-lg overflow-hidden">
-                    <img 
-                      src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-                      alt="Entrepreneuriat"
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold mb-4 text-black">ENTREPRENEURIAT & ENTREPRENEURIAT DIGITAL</h3>
-                  <ul className="list-disc list-inside space-y-2 ml-4 text-gray-600">
-                    <li>Coaching entrepreneurial</li>
-                    <li>Idée de projet de création</li>
-                    <li>Business plan</li>
-                    <li>Etudes stratégiques</li>
-                    <li>Créer son entreprise sur le digital</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-white shadow-lg border-0 text-black h-full">
+ <Card className="bg-white shadow-lg border-0 text-black h-full">
                 <CardContent className="p-6 md:p-8">
                   <div className="mb-4 h-48 rounded-lg overflow-hidden">
                     <img 
@@ -109,6 +89,26 @@ const FormationPage = () => {
                     <li>La communication interne</li>
                     <li>La législation de travail</li>
                     <li>La boîte à outil du responsable RH</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white shadow-lg border-0 text-black h-full">
+                <CardContent className="p-6 md:p-8">
+                  <div className="mb-4 h-48 rounded-lg overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                      alt="Entrepreneuriat"
+                      className="h-full w-full object-cover"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-black">ENTREPRENEURIAT & ENTREPRENEURIAT DIGITAL</h3>
+                  <ul className="list-disc list-inside space-y-2 ml-4 text-gray-600">
+                    <li>Coaching entrepreneurial</li>
+                    <li>Idée de projet de création</li>
+                    <li>Business plan</li>
+                    <li>Etudes stratégiques</li>
+                    <li>Créer son entreprise sur le digital</li>
                   </ul>
                 </CardContent>
               </Card>

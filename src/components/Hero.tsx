@@ -67,14 +67,21 @@ const Hero = () => {
     <section id="home" className="bg-gradient-to-b from-goldev-dark to-goldev-dark/80 text-white py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-            Découvrez GOLDEV - <span className="text-white">L'allié de votre développement</span>
-          </h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
+  GOLDEV
+  <div className="text-lg md:text-xl lg:text-2xl font-medium">
+    L'allié de votre développement
+  </div>
+</h1>
+
+
           <p className="text-lg md:text-xl text-gray-300 mb-8">
-            GOLDEV accompagne votre entreprise dans son développement avec des solutions personnalisées en formation, recrutement et conseil RH.
+            GOLDEV accompagne votre entreprise dans son développement avec des solutions personnalisées en formation, recrutement, consulting RH et marketing.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="btn-primary">Découvrir nos services</button>
+<a href="#services" className="btn-primary">
+  Découvrir nos services
+</a>
             <Link to="/contact">
             <button className="bg-white/10 hover:bg-white/20 text-white border border-goldev-primary font-medium py-2 px-6 rounded-md transition-all duration-300">
               Contactez-Nous
